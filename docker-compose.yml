@@ -1,0 +1,72 @@
+---
+version: "3"
+services:
+  chall-00:
+    build:
+      context: ./chall-00/
+    ports:
+      - 10000:5000
+    privileged: true
+
+  chall-01:
+    build:
+      context: ./chall-01/
+    ports:
+      - 10001:5000
+    privileged: true
+
+  chall-02:
+    build:
+      context: ./chall-02/
+    ports:
+      - 10002:5000
+    privileged: true
+
+  chall-03:
+    build:
+      context: ./chall-03/
+    ports:
+      - 10003:5000
+    privileged: true
+
+  chall-04:
+    build:
+      context: ./chall-04/
+    ports:
+      - 10004:5000
+    privileged: true
+
+  chall-05:
+    build:
+      context: ./chall-05/
+    ports:
+      - 10005:5000
+    privileged: true
+
+  chall-06:
+    build:
+      context: ./chall-06/
+    ports:
+      - 10006:5000
+    privileged: true
+
+  chall-07:
+    build:
+      context: ./chall-07/
+    ports:
+      - 10007:5000
+    privileged: true
+
+  chall-08:
+    build:
+      context: ./chall-08/
+    ports:
+      - 10008:5000
+    privileged: true
+
+  chall-09:
+    build:
+      context: ./chall-09/
+    ports:
+      - 10009:5000
+    privileged: true

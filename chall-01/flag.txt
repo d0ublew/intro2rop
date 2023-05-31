@@ -1,0 +1,1 @@
+intro2rop{chaining_calls_no_args}
