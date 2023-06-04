@@ -1,1 +1,1 @@
-intro2rop{c_being_lazy_but_fast}
+intro2rop{leaking_libc_with_plt_and_got}
