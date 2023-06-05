@@ -1,4 +1,7 @@
 notes.md
-chall
+bin-chall-??
 run
 solve.py
+alt.py
+.mypy_cache/
+.gdb_history

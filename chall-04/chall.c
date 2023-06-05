@@ -30,6 +30,6 @@ int main(void) {
     puts("Welcome to intro2rop chall-04");
     printf("Input: ");
     char buf[32];
-    read(0, buf, 64);
+    read(0, buf, 96);
     return 0;
 }

@@ -5,6 +5,7 @@
 
 void disass_me(void) {
     __asm__("mov %r12, (%r13)");
+    __asm__("ret");
 }
 
 void win(char *file_name) {
@@ -35,6 +36,6 @@ int main(void) {
     puts("Welcome to intro2rop chall-05");
     printf("Input: ");
     char buf[32];
-    read(0, buf, 64);
+    read(0, buf, 0x100);
     return 0;
 }

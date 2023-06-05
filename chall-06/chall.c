@@ -17,6 +17,6 @@ int main(void) {
     system("whoami");
     printf("\nInput: ");
     char buf[32];
-    read(0, buf, 64);
+    read(0, buf, 80);
     return 0;
 }
