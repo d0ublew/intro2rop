@@ -22,7 +22,7 @@ int main(void) {
     printf("[LEAK] banner address: %p\n", banner);
     printf("Input 1: ");
     char buf_1[64];
-    read(0, buf_1, 64);
+    read(0, buf_1, 0x80);
     printf("Input 2: ");
     char buf_2[64];
     read(0, buf_2, 96);
