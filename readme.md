@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Linux system
+- GNU/Linux system
 - Docker
 - GDB (preferably with `GEF` plugin)
 - Decompiler (optional): Ghidra or Binary Ninja Cloud
