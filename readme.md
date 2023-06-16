@@ -1,10 +1,18 @@
 # intro2rop
 
-## Installation
+## Requirements
+
+- Linux system
+- Docker
+- GDB (preferably with `GEF` plugin)
+- Decompiler (optional): Ghidra or Binary Ninja Cloud
+- pwntools
+
+## Setup
 
 ### Docker
 
-#### Kali Linux
+For Kali Linux
 
 1. Install docker
 
@@ -25,7 +33,7 @@
 
 References: [Installing Docker on Kali Linux | Kali Linux Documentation](https://www.kali.org/docs/containers/installing-docker-on-kali/)
 
-#### Other Linux Distribution
+For **other** GNU/Linux distributions
 
 1. Install [docker engine](https://docs.docker.com/engine/install/)
 2. Install [docker compose](https://docs.docker.com/compose/install/linux/)
@@ -45,10 +53,28 @@ References: [Installing Docker on Kali Linux | Kali Linux Documentation](https:/
        echo source ~/.gdbinit-gef.py >> ~/.gdbinit
    ```
 
+### Decompiler
+
+Choose **either** one.
+
+#### Binary Ninja Cloud
+
+Sign up here if you have not: <https://cloud.binary.ninja/>
+
+#### Ghidra
+
+For Kali Linux
+
+```sh
+sudo apt install ghidra
+```
+
+For **other** GNU/Linux distribution, consult the [official guide](https://htmlpreview.github.io/?https://github.com/NationalSecurityAgency/ghidra/blob/Ghidra_10.3.1_build/GhidraDocs/InstallationGuide.html)
+
 ### pwntools
 
 ```sh
-python3 -m pip install pwntools
+python3 -m pip install -U pwntools
 ```
 
 ## Getting Started
@@ -59,14 +85,14 @@ git clone https://github.com/d0UBleW/intro2rop.git
 cd intro2rop
 
 # starting the challenges
-docker-compose up -d
-
-# stopping the challenges
-docker-compose down
+make
 
 # solving the challenges
 cd chall-00
 ../init.sh
+
+# stopping the challenges
+make clean
 ```
 
 ## Resources
