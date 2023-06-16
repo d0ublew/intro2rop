@@ -16,7 +16,7 @@ echo "[+] File downloaded: ${CHALL_BIN}"
 if ! [ -f ./solve.py ]; then
     echo
     echo "[+] Generating base solve script"
-    sed "s/<CHALL_PLACEHOLDER>/${chall}/" ../template > ./solve.py
+    sed "s/<CHALL_PLACEHOLDER>/${chall}/" ../template.py > ./solve.py
     chmod +x ./solve.py
     echo "[+] Solve script generated: ./solve.py"
 fi
