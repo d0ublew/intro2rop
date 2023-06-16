@@ -19,7 +19,7 @@ void win(char *file_name) {
     char buf[64];
     int nbytes = read(fd, buf, sizeof(buf));
     if (nbytes < 0) {
-        printf("Unable to read ./win.txt content");
+        printf("Unable to read ./flag.txt content");
         exit(1);
     }
     write(1, buf, nbytes);
