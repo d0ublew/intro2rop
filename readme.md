@@ -7,8 +7,9 @@
 - GDB (preferably with `GEF` plugin)
 - Decompiler (optional): Ghidra or Binary Ninja Cloud
 - pwntools
+- pwninit
 
-## Setup
+## Tools
 
 ### Docker
 
@@ -75,6 +76,14 @@ For **other** GNU/Linux distribution, consult the [official guide](https://htmlp
 
 ```sh
 python3 -m pip install -U pwntools
+```
+
+### pwninit
+
+```sh
+wget https://github.com/io12/pwninit/releases/download/3.3.0/pwninit -O pwninit
+chmod +x ./pwninit
+sudo mv ./pwninit /opt/pwninit
 ```
 
 ## Getting Started
