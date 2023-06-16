@@ -8,6 +8,7 @@
 - Decompiler (optional): Ghidra or Binary Ninja Cloud
 - pwntools
 - pwninit
+- one_gadget
 
 ## Tools
 
@@ -84,6 +85,16 @@ python3 -m pip install -U pwntools
 wget https://github.com/io12/pwninit/releases/download/3.3.0/pwninit -O pwninit
 chmod +x ./pwninit
 sudo mv ./pwninit /opt/pwninit
+```
+
+### one_gadget
+
+```sh
+# Install `ruby` with your favorite package manager
+sudo apt install ruby
+
+# Install `one_gadget`
+gem install one_gadget
 ```
 
 ## Getting Started
