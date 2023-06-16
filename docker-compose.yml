@@ -70,3 +70,10 @@ services:
     ports:
       - 10009:5000
     privileged: true
+
+  chall-10:
+    build:
+      context: ./chall-10/
+    ports:
+      - 10010:5000
+    privileged: true
