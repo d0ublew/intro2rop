@@ -33,6 +33,16 @@ For Kali Linux
    docker run --rm -it hello-world
    ```
 
+4. Install docker-compose
+
+   ```sh
+   sudo mkdir -p /usr/local/lib/docker/cli-plugins
+   sudo curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose
+   sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+   docker compose version
+   sudo ln -sf /usr/local/lib/docker/cli-plugins/docker-compose /usr/local/bin/docker-compose
+   ```
+
 References: [Installing Docker on Kali Linux | Kali Linux Documentation](https://www.kali.org/docs/containers/installing-docker-on-kali/)
 
 For **other** GNU/Linux distributions
