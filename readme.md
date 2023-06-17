@@ -94,7 +94,7 @@ sudo mv ./pwninit /opt/pwninit
 sudo apt install ruby
 
 # Install `one_gadget`
-gem install one_gadget
+sudo gem install one_gadget
 ```
 
 ## Getting Started
