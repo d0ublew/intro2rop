@@ -3,8 +3,6 @@ bin-chall-??
 chall
 libc*.so*
 run
-solve.py
-alt.py
 .mypy_cache/
 .gdb_history
 .envrc
